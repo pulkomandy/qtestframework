@@ -1,0 +1,123 @@
+<html>
+<head>
+<title>Unit test report</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<style>
+					table { border-collapse: collapse; }
+					table,tr,td,th { border: 1px solid black; }
+				</style>
+</head>
+<body>
+<h1>UNIT TEST REPORT</h1>
+<h2 id="TestPrimes">TestPrimes</h2>
+<table CELLSPACING="0" CELLPADDING="2">
+<thead><tr>
+<TH>Function</TH>
+<th>Tag</th>
+<TH>Line</TH>
+<TH>Result</TH>
+<TH>Notification</TH>
+<th>Duration</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>IsPrime</td>
+<td></td>
+<td> -- </td>
+<td>qdebug</td>
+<td>4 is divisible by  2</td>
+<td>0,111974ms</td>
+</tr>
+<tr>
+<td>IsPrime</td>
+<td></td>
+<td> -- </td>
+<td>pass</td>
+<td></td>
+<td>0,111974ms</td>
+</tr>
+<tr>
+<td>NextPrime</td>
+<td></td>
+<td> -- </td>
+<td>qdebug</td>
+<td>4 is divisible by  2</td>
+<td>0,059797ms</td>
+</tr>
+<tr>
+<td>NextPrime</td>
+<td></td>
+<td> -- </td>
+<td>qdebug</td>
+<td>4 is not prime</td>
+<td>0,059797ms</td>
+</tr>
+<tr>
+<td>NextPrime</td>
+<td></td>
+<td> -- </td>
+<td>pass</td>
+<td></td>
+<td>0,059797ms</td>
+</tr>
+</tbody>
+</table>
+<h2 id="TestSqrt">TestSqrt</h2>
+<table CELLSPACING="0" CELLPADDING="2">
+<thead><tr>
+<TH>Function</TH>
+<th>Tag</th>
+<TH>Line</TH>
+<TH>Result</TH>
+<TH>Notification</TH>
+<th>Duration</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>SquarePositive</td>
+<td>four</td>
+<td> -- </td>
+<td>pass</td>
+<td></td>
+<td>0,125570ms</td>
+</tr>
+<tr bgcolor="red">
+<td>SquarePositive</td>
+<td>two</td>
+<td>38</td>
+<td>FAILED</td>
+<td>Compared doubles are not the same (fuzzy compare)
+   Actual   (squareRoot(input)): 1,41421
+   Expected (output)           : 1,414</td>
+<td>0,125570ms</td>
+</tr>
+<tr>
+<td>SquarePositive</td>
+<td>nine</td>
+<td> -- </td>
+<td>pass</td>
+<td></td>
+<td>0,125570ms</td>
+</tr>
+<tr bgcolor="yellow">
+<td>SquareNegative</td>
+<td></td>
+<td>0</td>
+<td>qwarn</td>
+<td>Attempt to root a negative number</td>
+<td>0,102022ms</td>
+</tr>
+<tr bgcolor="red">
+<td>SquareNegative</td>
+<td></td>
+<td>43</td>
+<td>FAILED</td>
+<td>Compared doubles are not the same (fuzzy compare)
+   Actual   (squareRoot(-1.0)): 0
+   Expected (nan("-1"))       : nan</td>
+<td>0,102022ms</td>
+</tr>
+</tbody>
+</table>
+</body>
+</html>
